@@ -1,0 +1,74 @@
+                           +-------------------+
+                           |      FARMER       |
+                           +-------------------+
+                           | Farmer_ID (PK)    |
+                           | Name              |
+                           | Email             |
+                           | Phone             |
+                           | Location          |
+                           +-------------------+
+                                    |
+                                    | 1
+                                    |
+                                    | M
+                           +-------------------+
+                           |       FIELD       |
+                           +-------------------+
+                           | Field_ID (PK)     |
+                           | Farmer_ID (FK)    |
+                           | Field_Name        |
+                           | Area              |
+                           | Soil_ID (FK)      |
+                           +-------------------+
+                                    |
+                     +--------------+--------------+
+                     |                             |
+                     |                             |
+                  1  |                             | M
+                     |                             |
+           +-------------------+         +--------------------+
+           |   SOIL DETAILS    |         |       CROP         |
+           +-------------------+         +--------------------+
+           | Soil_ID (PK)      |         | Crop_ID (PK)       |
+           | Soil_Type         |         | Crop_Name          |
+           | pH                |         | Season             |
+           | Moisture          |         | Water_Requirement  |
+           | Nitrogen          |         | Fertilizer         |
+           | Phosphorus        |         | Expected_Yield     |
+           | Potassium         |         +--------------------+
+           +-------------------+                  |
+                                                  |
+                                                  | M
+                                                  |
+                                                  | 1
+                                        +----------------------+
+                                        |  RECOMMENDATION      |
+                                        +----------------------+
+                                        | Recommend_ID (PK)    |
+                                        | Crop_ID (FK)         |
+                                        | Weather_ID (FK)      |
+                                        | Fertilizer           |
+                                        | Irrigation           |
+                                        +----------------------+
+                                                  |
+                                                  |
+                                                  |
+                                         +----------------------+
+                                         |      WEATHER        |
+                                         +----------------------+
+                                         | Weather_ID (PK)     |
+                                         | Temperature         |
+                                         | Humidity            |
+                                         | Rainfall            |
+                                         | Date                |
+                                         +----------------------+
+
+                           +----------------------+
+                           |   YIELD PREDICTION   |
+                           +----------------------+
+                           | Prediction_ID (PK)   |
+                           | Farmer_ID (FK)       |
+                           | Crop_ID (FK)         |
+                           | Predicted_Yield      |
+                           | Prediction_Date      |
+                           +----------------------+
