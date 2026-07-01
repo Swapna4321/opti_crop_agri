@@ -1,0 +1,33 @@
+                 OPTICROP AGRICULTURE SYSTEM
+
+        Atmospheric Humidity / Environmental Data
+                           │
+                           ▼
+                 Sensor Monitoring Unit
+          (Temperature, Humidity, Soil Sensors)
+                           │
+                           ▼
+                Control & Processing Unit
+                    (Microcontroller)
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+          ▼                ▼                ▼
+   Cooling System    Water Condensation   Data Analysis
+      Control            Process          & Monitoring
+          │                │                │
+          ▼                ▼                ▼
+   Cold Water Flow   Water Collection   Performance Data
+          │                │
+          └──────────┬─────┘
+                     ▼
+            Irrigation Distribution
+                     │
+                     ▼
+                Crop Root Zone
+                     │
+                     ▼
+             Plant Growth & Yield
+                     │
+                     ▼
+             Yield Monitoring Report
